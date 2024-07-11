@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Search Crop Details</title>
+ <style>
+   body{
+                background-image: url('produce.jpg');
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-size: cover;
+            }
+    div {
+    height: 200px;
+    width: 400px;
+    padding-bottom:100px;
+
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -100px;
+    margin-left: -200px;
+}
+</style>
+</head>
+<body>
+  <div>
+  <h2>Search Crop Details</h2>
+  <form action="search.php" method="post">
+    <input type="text" name="search" placeholder="Search by Crop Name or Place" required>
+    <button type="submit">Search</button>
+  </form>
+</div>
+</body>
+</html>

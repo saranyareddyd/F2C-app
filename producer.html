@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Publish Crop Details</title>
+  <style>
+    body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background-image: url('produce.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+h1 {
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="tel"] {
+  width: 500px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  padding-top:15px;
+  padding-bottom:10px;
+  padding-left:15px;
+}
+
+.radio-group {
+  display: flex;
+}
+
+.radio-group input[type="radio"] {
+  margin-right: 5px;
+}
+
+.form-buttons {
+  margin-top: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+button[type="submit"] {
+  background-color: #008CBA;
+}
+
+button[type="reset"] {
+  background-color: #f44336;
+}
+fieldset{
+    width:500px;
+    height:500px;
+    background-color: skyblue;
+    border-radius: 20px;
+    padding-top:20px;
+}
+  </style>
+</head>
+<body>
+  <h1>Publish Crop Details</h1>
+  <center>
+  <fieldset>
+  <form action="publish.php" method="post">
+    <div class="form-group">
+      
+      <input type="text" id="name" name="name"  placeholder="Name " required>
+    </div>
+    <div class="form-group">
+    
+      <input type="text" id="crop-name" name="crop-name"  placeholder="Crop Name" required>
+    </div>
+    <div class="form-group">
+      <input type="number" id="quantity" name="quantity" placeholder="Quantity" required>
+    </div>
+    <div class="form-group">
+      <label>Quantity Unit:</label>
+      <div class="radio-group">
+        <input type="radio" id="kg" name="unit" value="kg" required>
+        <label for="kg">kg</label>
+        <input type="radio" id="quintal" name="unit" value="quintal">
+        <label for="quintal">quintal</label>
+        <input type="radio" id="tons" name="unit" value="tons">
+        <label for="gram">Tons</label>
+      </div>
+    </div>
+    <div class="form-group">
+      
+      <input type="number" id="price" name="price" placeholder="Price" required>
+    </div>
+    <div class="form-group">
+      
+      <input type="text" id="place" name="place"  placeholder="Place" required>
+    </div>
+    <div class="form-group">
+      
+      <input type="number" id="phone" name="phone"   placeholder="Phone Number" required>
+    </div>
+    <div class="form-buttons">
+      <button type="submit">Submit</button>
+      <button type="button" onclick="window.history.back()">Back</button>
+      <button type="reset">Reset</button>
+    </div>
+  </form>
+</fieldset>
+</center>
+</body>
+</html>
